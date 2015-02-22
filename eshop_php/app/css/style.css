@@ -1,0 +1,157 @@
+.info {
+	 width:200px;
+}	
+
+body{
+	background-image: url("images/shopping2.jpg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: 800px 700px;
+	
+}
+
+.input-position{
+	position: absolute;
+	left: 900px; 
+	right: -50px;
+	top: 100px;
+}
+
+label{
+	color: #428bca;
+}
+
+#error{
+position: absolute;
+left: 870px; 
+right: -50px;
+top: 430px;
+color: red;
+}
+
+#error-email{
+position: absolute;
+left: 870px; 
+right: -50px;
+top: 340px;	
+color: red;
+}
+
+#wrong-email{
+position: absolute;
+left: 950px; 
+right: 0px;
+top: 278px;	
+color: red;	
+}
+
+
+
+.picture{
+	position: absolute;
+	left: 550px; 
+	right: 0px;
+	top: 50px;
+}	
+
+#change-pic{
+ 	position: absolute;
+	left: 00px;
+	width: 00px; 
+	height: 41px;
+	right: 200 px;
+}
+
+#view-history{
+	position: absolute;
+	left: 150px;
+	width:00px; 
+	height: 41px;
+	right: 0px;	
+}
+
+#view-shop{
+	position: absolute;
+	left: 320px;
+	width: 00px; 
+	height: 41px;
+	right: 0px;	
+}
+
+#logout{
+	position: absolute;;
+	left: 800px;
+	width: 00px; 
+	height: 41px;
+	right: 0px;		
+}
+
+#table{
+	position: absolute;
+	left:550px;
+	width: 00px; 
+	height: 41px;
+	right: 0px;	
+	bottom: 300px;	
+}
+
+.background{
+	position: absolute;
+	left:420px;
+	background-color: black;
+
+}
+
+#change-info{
+	position: absolute;
+	left: 10px;
+	width: 00px; 
+	height: 41px;
+	bottom: -100px;	
+}
+
+
+
+.input-position{
+	position: absolute;
+	left: 550px; 
+	right: -50px;
+	top: 100px;
+	width: 200px;
+}
+
+
+label{
+	color: #428bca;
+}	
+
+#error{
+position: absolute;
+left: 870px; 
+right: -50px;
+top: 430px;
+color: red;
+}
+
+#error-email{
+position: absolute;
+left: 530px; 
+right: -50px;
+top: 350px;	
+color: red;
+}
+
+#wrong-email{
+position: absolute;
+left: 600px; 
+right: 0px;
+top: 280px;	
+color: red;	
+}
+
+#hint{
+	position: absolute;
+	top: 50px;
+	left: 480px;
+
+}

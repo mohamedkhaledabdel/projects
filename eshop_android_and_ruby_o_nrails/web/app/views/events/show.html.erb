@@ -1,0 +1,53 @@
+
+<div class="row profile">
+    <div class="col-sm-4 col-md-3">
+        <%= image_tag(@event.image.url(:medium), class: 'avatar') %>
+
+        <h1><%= @event.name %></h1>
+        <ul>
+            <%= content_tag(:li, ("Date: " + @event.date.strftime("%Y-%m-%d %I:%M%P"))) unless @event.date.blank? %>        
+            <%= content_tag(:li, ("Location: " + @event.location)) unless @event.location.blank? %>
+            <%= content_tag(:li, ("Description: " + @event.description)) unless @event.description.blank? %>
+        </ul>
+    </div>
+        <%= render 'invite' %>
+    <div class="feed">
+        <h3></h3>
+          <% if(@post.present?) %>
+      <% @post.each do |post| %>
+      <ul>
+          <li>  
+            <p> <%= post.view_user.first_name + " " +post.view_user.last_name %> </p>
+            <p> <%= post.text %> </p>
+            <% if(@comment.present?) %>
+              <% @comment.each do |com| %>
+                <li>
+                  <p> <%= com.view_user.first_name +
+                    " " + com.view_user.last_name %> </p> 
+                  <%= com.text %> 
+                </li>
+              <% end %> 
+            <% else %>
+              no comments 
+            <% end %>     
+          <%= form_for @commentAdd, url: {action: "add_comment", 
+            user_id: 1, post_id: post.id} do |comment| %>
+              <%= comment.text_field :text %>
+            <%= submit_tag 'comment' %>
+          <% end %>
+        </li>
+        </ul>
+      <% end  %>
+  <% end %>      
+  <%= form_for @postAdd, url: {action: "add_post", user_id: 1} do |post| %>
+      Post <%= post.text_field :text %>
+      <%= submit_tag 'post' %>
+  <% end %>
+
+    </div>
+</div>
+
+<% if @event.user_id == current_user.id %>
+  <%= link_to 'Edit', edit_event_path(@event) %>
+<% end %> 
+<%= link_to 'Back', events_path %>

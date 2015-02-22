@@ -1,0 +1,62 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.unibook.RequestsActivity" >
+
+    <TextView
+        
+        android:id="@+id/friendstext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="@string/requests" />
+
+    <Button
+        android:id="@+id/reject2"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/reject1"
+        android:layout_toRightOf="@+id/accept1"
+        android:onClick="requests"
+        android:text="@string/reject" />
+
+    <Button
+        android:id="@+id/accept2"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/reject2"
+        android:layout_toLeftOf="@+id/reject2"
+        android:onClick="requests"
+        android:text="@string/accept" />
+
+    <Button
+        android:id="@+id/accept1"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/friendstext"
+        android:layout_marginTop="18dp"
+        android:layout_toLeftOf="@+id/reject1"
+        android:onClick="requests"
+        android:text="@string/accept" />
+
+    <Button
+        android:id="@+id/reject1"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/accept1"
+        android:layout_alignBottom="@+id/accept1"
+        android:layout_alignParentRight="true"
+        android:onClick="requests"
+        android:text="@string/reject" />
+
+</RelativeLayout>

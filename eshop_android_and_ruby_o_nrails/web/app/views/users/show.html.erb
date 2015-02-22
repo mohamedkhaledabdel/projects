@@ -1,0 +1,30 @@
+<div class="row profile">
+    <div class="col-sm-4 col-md-3">
+        <%= image_tag(@user.avatar.url(:medium), class: 'avatar') %>
+        <%= render 'follow_form' %>
+        <h1><%= @user.first_name + " " + @user.last_name %></h1>
+        <ul>
+            <%= content_tag(:li, ("Email: " + @user.email)) unless @user.email.blank? %>
+            <%= content_tag(:li, ("Age: " + distance_of_time_in_words(Time.now, @user.date_of_birth) + " old")) unless @user.date_of_birth.blank? %>
+            <%= content_tag(:li, ("Location: " + @user.location)) unless @user.location.blank? %>
+                <div class="stats">
+                  <a href="<%= following_user_path(@user) %>">
+                    <strong id="following" class="stat">
+                      <%= @user.following.count %>
+                    </strong>
+                    following
+                  </a>
+                  <a href="<%= followers_user_path(@user) %>">
+                    <strong id="followers" class="stat">
+                      <%= @user.followers.count %>
+                    </strong>
+                    followers
+                  </a>
+                </div>
+        </ul>
+    </div>
+    <div class="feed">
+        <h3>Social Feed Coming</h3>
+        <p>POSTS HERE</p>
+    </div>
+</div>

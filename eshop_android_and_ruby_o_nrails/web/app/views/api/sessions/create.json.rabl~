@@ -1,0 +1,6 @@
+object @user => nil
+<<<<<<< HEAD
+attributes :id, :name, :email, :token, :first_name, :last_name
+=======
+attributes :id, :first_name, :last_name, :email, :location, :date_of_birth, :token
+>>>>>>> c55bf41bb28f3684d6c8be94335c7475c6f8b29d

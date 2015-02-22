@@ -1,0 +1,20 @@
+<% if(@events.present?) %>
+<div class="container">
+    <div class="users row">
+        <% @events.each do |event| %>
+        <div class="panel panel-default">
+            <%= link_to event_path(event) do %>
+            <div class="panel-body">
+                <%= image_tag(event.image.url(:thumb)) %>
+                <p><%= event.name %></p>
+            </div>
+            <% end %>
+        </div>
+        <% end %>
+    </div>
+</div>
+<% else %>
+    <p> You are not following any event </p> 
+<% end %> 
+<%- #direct to create a new event- -%>
+<%= link_to 'New Event', new_event_path %>

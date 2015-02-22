@@ -1,0 +1,38 @@
+package com.example.unibook;
+
+import java.util.List;
+
+import retrofit.Callback;
+import retrofit.http.Field;
+import retrofit.http.FormUrlEncoded;
+import retrofit.http.GET;
+import retrofit.http.POST;
+import retrofit.http.Path;
+
+public interface PublicApiRoutes {
+	@POST("/sessions")
+	@FormUrlEncoded
+	void login(@Field("session[email]") String email,
+		@Field("session[password]") String password,
+		Callback<User> callback);
+	@GET("/events")
+	void getEvents(Callback<List<Event>> callback);
+<<<<<<< HEAD
+	
+	@GET("/events/{events_id}")
+	void viewEvent(@Path("events_id") int id, Callback<Event> callback);
+	
+	@GET("/events/show_post/{event_id}")
+	void viewPosts(@Path("event_id") int id, Callback<List<Post>> callback);
+	
+	
+=======
+	@GET("/users/{user_id}/followers")
+	void getFollowers( @Path("user_id") long id, Callback<List<User>> callback);
+	@GET("/users/{user_id}/following")
+	void getFollowings( @Path("user_id") long id, Callback<List<User>> callback);
+	@GET("/users/{user_id}")
+	void showUser( @Path("user_id") long id, Callback<User> callback);
+>>>>>>> c55bf41bb28f3684d6c8be94335c7475c6f8b29d
+	
+}

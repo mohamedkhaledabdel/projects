@@ -1,0 +1,37 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue"
+    tools:context="com.example.unibook.AllEventsCommentsActivity" >
+
+ <ListView
+     android:id="@+id/lst_events_comments"
+     android:layout_width="match_parent"
+     android:layout_height="400dp"
+     android:layout_alignParentTop="true" >
+
+    </ListView>
+    
+
+<Button
+	       android:id="@+id/btn_add_comment"
+	       android:layout_width="wrap_content"
+	       android:layout_height="wrap_content"
+	       android:layout_alignParentBottom="true"
+	       android:layout_alignParentEnd="true"
+	       android:text="@string/event_comment_button" />
+
+	   <EditText
+	       android:id="@+id/txt_event_comment"
+	       android:layout_width="100dp"
+	       android:layout_height="50dp"
+	       android:layout_alignParentBottom="true"
+	       android:layout_alignParentStart="true"
+	       android:layout_alignTop="@+id/btn_add_comment"
+	       android:layout_marginStart="14dp"
+	       android:layout_toStartOf="@+id/btn_add_comment"
+	       android:hint="@string/hint_comment" />
+
+</RelativeLayout>
+ 

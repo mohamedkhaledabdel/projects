@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Unibook</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_register">RegisterActivity</string>
+    <string name="login"> Login </string>
+    <string name="register">Register</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last_name</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="date_of_birth">Date of Birth</string>
+    <string name="location">Location</string>
+    <string name="age">Age</string>
+    <string name="post">Post</string>
+    <string name="following">Followings</string>
+    <string name="followers">Followers</string>
+    <string name="show">Show</string>
+    <string name="events">events</string>
+    <string name="title_activity_profile">ProfileActivity</string>
+    <string name="post_profile">Write something...</string>
+    <string name="todo">TODO</string>
+    <string name="title_activity_menu">MenuActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_friends">friendsActivity</string>
+    <string name="title_activity_requests">RequestsActivity</string>
+    <string name="requests">Requests:</string>
+    <string name="title_activity_settings">SettingsActivity</string>
+    <string name="title_activity_posts">AllPostsActivity</string>
+    
+    <string name="name">Name</string>
+    <string name="new_name">New name:</string>
+    <string name="newname"></string>
+    <string name="newnamefield">new name</string>
+    <string name="newpassword">New password</string>
+    <string name="newpasswordd">New password:</string>
+    <string name="newpasswordfield">new password</string>
+    <string name="newemail">New email:</string>
+    <string name="newemailfield">new email</string>
+    <string name="newbirthdate">New birthdate</string>
+    <string name="newdateofbirth">New date of birth:</string>
+    <string name="dayfield">00</string>
+    <string name="submit">Submit</string>
+    <string name="birthdatefield">dd/mm/yyyy</string>
+    <string name="friendrequests">Friend requests</string>
+    <string name="accept">Accept</string>
+    <string name="reject">reject</string>
+    <string name="title_activity_events">EventActivity</string>
+    <string name="event_name">Event Name:</string>
+    <string name="event_location">Event Location:</string>
+    <string name="event_time">Event Time:</string>
+    <string name="event_description">Event Description:</string>
+    <string name="title_activity_all_events">AllEvents</string>
+    <string name="Join">switch_event</string>
+    <string name="event_switch">Join</string>
+    <string name="title_activity_university">UniversityActivity</string>
+    <string name="university_name">"University Name: "</string>
+    <string name="title_activity_groups">GroupsActivity</string>
+    <string name="event_post">Post</string>
+    <string name="event_hint_post">Post</string>
+    <string name="button_event_post">Post</string>
+    <string name="button_university_event">View Events</string>
+    <string name="view_posts">View Posts</string>
+    <string name="facebook_app_id">618658368244308</string>
+    <string name="title_activity_facebook">FacebookActivity</string>
+    <string name="open_event"> Open </string>
+    <string name="open_post"> View Comments </string>
+    <string name="title_activity_followings">FollowingsActivity</string>
+    <string name="title_activity_show">ShowActivity</string>
+
+</resources>

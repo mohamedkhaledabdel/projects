@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.unibook"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="19"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/title_activity_login"
+            android:windowSoftInputMode="adjustResize|stateVisible" >
+        </activity>
+        <activity
+            android:name=".RegisterActivity"
+            android:label="@string/title_activity_register" >
+        </activity>
+        <activity
+            android:name=".ProfileActivity"
+            android:label="@string/title_activity_profile" >
+        </activity>
+        <activity
+            android:name=".MenuActivity"
+            android:label="@string/title_activity_menu"
+            android:parentActivityName="android.app.ListActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="android.app.ListActivity" />
+        </activity>
+        <activity
+            android:name=".FollowersActivity"
+            android:label="@string/title_activity_friends" >
+        </activity>
+        <activity
+            android:name=".RequestsActivity"
+            android:label="@string/title_activity_requests" >
+        </activity>
+        <activity
+            android:name=".SettingsActivity"
+            android:label="@string/title_activity_settings" >
+        </activity>
+        <activity
+            android:name=".EventsActivity"
+            android:label="@string/title_activity_events" >
+        </activity>
+        <activity
+            android:name=".AllEventsActivity"
+            android:label="@string/title_activity_all_events" >
+        </activity>
+        <activity
+            android:name=".UniversityActivity"
+            android:label="@string/title_activity_university" >
+        </activity>
+        <activity
+            android:name=".GroupsActivity"
+            android:label="@string/title_activity_groups" >
+        </activity>
+        <activity
+            android:name=".AllPostsActivity"
+            android:label="@string/title_activity_posts" >
+             
+        </activity>
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <activity
+            android:name=".FacebookActivity"
+            android:label="@string/title_activity_facebook" >
+        </activity>
+        <activity
+            android:name=".FollowingsActivity"
+            android:label="@string/title_activity_followings"
+            android:parentActivityName=".ProfileActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.unibook.ProfileActivity" />
+        </activity>
+        <activity
+            android:name=".ShowActivity"
+            android:label="@string/title_activity_show" >
+        </activity>
+        <activity
+            android:name=".AllEventsCommentsActivity"
+            android:label="@string/title_activity_all_events_comments" >
+        </activity>
+        <activity
+            android:name=".CreateEventActivity"
+            android:label="@string/title_activity_create_events" >
+        </activity>
+        
+        <activity
+            android:name=".MyEventsActivity"
+            android:label="@string/title_activity_my_events" >
+        </activity>
+        
+    </application>
+
+</manifest>

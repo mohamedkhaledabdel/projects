@@ -29,7 +29,7 @@ same format as before.
 Here is sample.in for the left factoring.
 S
 aSbS|aS|!
-
+---------------------------------------------
 and sample.out for the left factoring.
 S->[aSS', !]
 S'->[bS, !]

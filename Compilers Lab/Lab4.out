@@ -1,0 +1,3 @@
+S -> Aa,b,a
+A -> cA',bdA',ad
+A' -> cA',adA',!

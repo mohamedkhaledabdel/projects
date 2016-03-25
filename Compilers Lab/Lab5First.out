@@ -1,0 +1,7 @@
+First(b): [b, ]
+First(A): [a, !, ]
+First(c): [c, ]
+First(B): [b, !, ]
+First(S): [b, a, c, b, !, ]
+First(C): [c, !, ]
+First(a): [a, ]

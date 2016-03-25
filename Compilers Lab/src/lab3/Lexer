@@ -1,0 +1,66 @@
+import java.lang.System;
+import java.io.*;
+
+class Lexer {
+
+	Yylex tokenizer;
+	public  Lexer(String fileName) 
+	{
+	  try
+	  {
+	  tokenizer=new Yylex(new BufferedReader(new FileReader(fileName)));
+	  }
+	  catch(Exception e)
+	  {
+	  
+	  }	 
+	}
+	public Token nextToken()
+	{
+		Token next=null;
+		try
+		{
+		 next=  tokenizer.getToken();
+		}
+		catch(Exception e)
+		{
+		}
+		return next;
+	}
+	}
+
+
+%%
+
+
+%function getToken
+%type Token
+%char
+%line
+
+
+%{
+	//initialize  variables to be used by class
+%}
+
+
+%init{
+
+//Add code to be executed on initialization of the lexer
+
+%init}
+
+START=(\\documentclass\{(.)+\})
+PACKAGE=(\\usepackage\[(.)+\]\{(.)+\})
+COMMENT=(%(.)*)
+NEWLINE=[\n]
+
+%% 
+<YYINITIAL> {START} { return (new Token(Token.DOC_CLASS,yytext()));}
+<YYINITIAL> {PACKAGE} { return (new Token(Token.PACKAGE,yytext()));}
+<YYINITIAL> {COMMENT} {}
+<YYINITIAL> {NEWLINE} {return (new Token(Token.NEWLINE,yytext()));
+}
+<YYINITIAL> . {
+  return new Token(Token.ERROR, "Invalid input: " + yytext());
+}

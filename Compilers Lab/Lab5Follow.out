@@ -1,0 +1,4 @@
+Follow(A): [b, !, a, a, !, $, ]
+Follow(B): [c, !, ]
+Follow(S): [b, !, a, a, !, $, ]
+Follow(C): []
